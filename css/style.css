@@ -39,7 +39,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.7;
     color: #333333;
     font-weight: 400;
@@ -57,13 +57,17 @@ h6{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 24px;
     text-transform: none;
 }
 
 p {
     letter-spacing: 0;
-    line-height:1.8;
+    /* line-height:1.4; */
+    color:#000000;
+
+    line-height: 28px;
+    font-size: 23px;
 }
 
 a{
@@ -98,7 +102,7 @@ img {
     margin-bottom: 5%;
 }
 .section-header h1{
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .section-header .line1 {
@@ -249,11 +253,15 @@ img {
 .navbar-right li a{
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 13px;
 }
 
+.navbar-right li a:hover{
+    font-weight: 600;
+}
 .navbar-right li.active a{
-    font-weight: bold;
+    font-weight: lighter;
     color: #ffffff;
 }
 
@@ -270,6 +278,33 @@ img {
 .navbar-toggle .icon-bar{
     background: #777777;
 }
+/* .wrapper {
+    height: 2000px;
+    position: relative;
+    background: green;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: grey;
+  } */
+  
+  .lrg-logo {
+    width: 348PX;
+    height: 47px;
+    text-align: center;
+    background-image: url("../images/home/memophonicstudio.png");
+  }
+  
+  .sml-logo {
+    width: 348PX;
+    height: 47px;
+    text-align: center;
+    background-image: url("../images/home/memophonic.png");
+  }
+
 
 /*---------- Nav area css ends -------------*/
 
@@ -326,7 +361,7 @@ img {
 
 .banner-area{
     /* background-image: url(../images/home/home.png); */
-    background-image: url(../images/home/web_1.jpg);
+    background-image: url(../images/home/web_1.jpg); */
     background-position: center;
     -webkit-background-size:cover;
     background-size:cover;
@@ -380,14 +415,30 @@ canvas{
 }
 
 .banner-btn a {
-    background-color: #E15F41;
-    color: #ffffff;
-    padding: 10px 35px;
+    background-color: #fff;
+    color: #C1272D;
+    padding: 5px 50px;
     display: inline-block;
-    margin-top: 25px;
-    border-radius: 25px;
+    margin-top: 15px;
+    border-radius: 20px;
     text-decoration: none;
     letter-spacing: 2px;
+    /* font-size:15px!important; */
+    font-weight: bold;
+  
+}
+.banner-btn a:hover{
+    background-color: #C1272D;
+    color: #ffffff;
+    padding: 5px 50px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-width:2px;
+    border-style:solid;
+    border-color: #fff;
 }
 
 @media (max-width: 991px){
@@ -405,8 +456,20 @@ canvas{
     background-color: #C1272D;
     
 }
-.about-area h1, h3, p{
+.about-area h1{
     color:white!important;
+    font-size: 36px;
+}
+.about-area h3{
+    font-size:24px!important;
+    
+    color:white!important;
+}
+.about-area p{
+    color:white!important;
+    font-size:18px!important;
+    font-weight: lighter;
+
 }
 .about-left {
     -webkit-box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
@@ -419,7 +482,7 @@ canvas{
 .about-right h1 {
     border-left: 3px solid #C1272D;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 36px;
     line-height:40px;
 }
 .text-primary {
@@ -474,7 +537,7 @@ canvas{
 }
 #resume h1 {
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .timeline {
@@ -559,33 +622,73 @@ canvas{
 }
 
 #resume h4 {
-    font-size: 15px;
-    color:#000000;
+    /* font-size: 15px;
+    color:#000000; */
+    line-height: 34px;
+    color: #C1272D;
+    font-size: 28px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
 #resume h4 span {
-    padding-left: 10px;
+    
+    /* padding-left: 10px; */
 }
 
 #resume h5 {
-    padding-left: 40px;
+    /* padding-left: 40px; */
+    line-height: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    text-transform: none;
 }
 
-#resume p {
-    font-size: 13px;
+#resume .equipo{
+    border-top:2px solid #000;
+    border-right:2px solid #000;
+    border-left:2px solid #000;
+    border-bottom:2px solid #000;
+    /* width: 453px; */
+    border-radius:15px;
+}
+#resume .equipo img{
+    /* width:100%; */
+}
+
+#resume .equipo p{
+    line-height: 18px;
+    font-size: 15px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+}
+#resume .equipo .equipo-info{
+    padding: 35px 35px;
 }
 
 /*------ Resume area ends ---------*/
 
 /*---------------8. Services area Starts--------------*/
 
-.services-area {
-    background-color: #eeeeee;
-}
 
+.services-area {
+    background-color: #fff;
+    color:#000000!important;
+}
+.services-area p {
+    color:#000000!important;
+}
+.services-area h2 {
+    font-size: 36px!important;
+}
 .services-icon i {
     font-size: 35px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .services-content h3 {
@@ -646,10 +749,11 @@ canvas{
 
 /*--------------9. Portfolio area starts-----------*/
 
-#portfolio h1 {
-    /border-left: 3px solid #E94E63;
+#portfolio h2 {
+    border-left: 3px solid #E94E63;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 
@@ -758,7 +862,7 @@ canvas{
 /*------------10. Testimonial area starts ---------*/
 
 .testimonial-content p {
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
     font-size: 18px;
 }
@@ -769,18 +873,18 @@ canvas{
 
 .single-testimonial {
     margin: 0 49px 29px;
-    border-right: 5px solid #E15F41;
-    border-left: 5px solid #E15F41;
+    /* border-right: 5px solid #E15F41;
+    border-left: 5px solid #E15F41; */
     padding: 40px 30px 40px;
     position: relative;
-    background-color: #eeeeee;
+    background-color: #fff;
     color: #010446;
     text-align: center;
 }
 
 .single-testimonial::before {
     content: "";
-    background-color: #E15F41;
+    /* background-color: #E15F41; */
     position: absolute;
     top: 0;
     left: 0;
@@ -790,7 +894,7 @@ canvas{
 
 .single-testimonial::after {
     content: "";
-    background-color: #E15F41;
+    /* background-color: #E15F41; */
     right: 0;
     width: 50%;
     height: 5px;
@@ -805,10 +909,10 @@ canvas{
 
 .single-testimonial .pic {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    /* width: 80px;
+    height: 80px; */
     margin-right: 15px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     overflow: hidden;
 }
 
@@ -833,16 +937,21 @@ canvas{
 
 .owl-dot {
     display: inline-block;
-    height: 15px !important;
-    width: 15px !important;
-    background-color: #222222 !important;
+    height: 13px !important;
+    width: 13px !important;
+    background-color: #fff !important;
+    border-top:2px solid #C1272D;
+    border-left:2px solid #C1272D;
+    border-bottom:2px solid #C1272D;
+    border-right:2px solid #C1272D;
     opacity: 0.8;
     border-radius: 50%;
     margin: 0 5px;
 }
 
 .owl-dot.active {
-    background-color: #E15F41 !important;
+    background-color: #C1272D !important;
+    
 }
 
 /*------------ Testimonial area ends ---------*/
@@ -854,12 +963,13 @@ canvas{
     color: #ffffff;
 }
 .single-invite h2 {
-    font-size: 27px;
+    font-size: 30px;
     line-height: 37px;
     margin-bottom: 20px;
     padding-top: 10px;
-    font-weight: 600;
+    font-weight: 400;
     color: #ffffff;
+    text-transform: lowercase!important;
 }
 .single-invite p {
     width: 70%;
@@ -869,14 +979,28 @@ canvas{
 .single-invite a {
     display: inline-block;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 25px;
     /* text-transform: uppercase; */
     background: #7A272D;
-    margin-top: 20px;
+    margin-top: 32px;
     border-radius: 30px;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.single-invite a:hover {
+    /* display: inline-block; */
+    color: #7A272D;
+    /* padding: 5px 25px; */
+    /* text-transform: uppercase; */
+    background: #fff;
+    /* margin-top: 20px; */
+    /* border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px; */
 }
 
 /*-------invitation area ends------*/
@@ -885,10 +1009,10 @@ canvas{
 
 
 .contact-area .form-control{
-    border:2px solid #a2a2a2;
+    border:1px solid #a2a2a2;
     box-shadow: none;
     padding: 6px;
-    border-radius: 0;
+    border-radius: 25;
     margin-bottom: 30px;
 }
 
@@ -905,8 +1029,12 @@ canvas{
 }
 
 .btn.btn-send {
-    background-color: #E15F41;
-    color: #ffffff;
+    background-color: #fff;
+    color: #9B272D;
+    border-top:2px solid #9B272D;
+    border-right:2px solid #9B272D;
+    border-left:2px solid #9B272D;
+    border-bottom:2px solid #9B272D;
     padding: 10px 35px;
     display: inline-block;
     margin-top: 30px;
@@ -914,7 +1042,10 @@ canvas{
     text-decoration: none;
     letter-spacing: 2px;
 }
-
+.btn.btn-send:hover {
+    background-color: #9B272D;
+    color: #fff;
+}
 .top-contact-text h2{
     margin-top: 2px;
     margin-bottom: 5px;
@@ -985,10 +1116,39 @@ canvas{
     color: #ffffff;
     padding: 30px 0;
 }
+.footer-area h3{
+    text-align: left;
+    line-height: 0.5em;
+    color: #ffffff;
+}
+.footer-area nav ul li a{
+    font-weight: lighter;
+    font-size:15px;
+    line-height:0em;
+}
 .footer-area a{
     color: white;
 }
 
+.footer-area .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.footer-area ul li {
+    display:inline-block;
+    vertical-align:  middle;
+    
+}
+.footer-area ul li  a {
+    display: block;
+    font-size: 1.4em;
+    margin: 0 0px;
+    text-decoration: none;
+}
+        
+    
 /*--------------- Footer area ends -------------*/
 
 
