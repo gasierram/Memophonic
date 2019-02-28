@@ -60,13 +60,8 @@
 
     <!--Responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
-
-
-    <!-- Slick carousel -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/v4-shims.css">
 
 </head>
 <body>
@@ -308,6 +303,9 @@
                                 y en cargos de producción ejecutiva.</p>
         
                             </div>
+                            <div class="single-invite text-center portafolio-button" >
+                                <a href="#contact" class="my-btn-portafolio">Portafolio</a>
+                            </div>
                         </div>
                         
 
@@ -321,6 +319,9 @@
                                 <h5>Ingeniera de sonido, productora musical y directora general.</h5>
                                 <p>Música e Ingeniera de sonido graduada de la Pontificia Universidad Javeriana. Cuenta con amplia experiencia trabajando en numerosos proyectos audiovisuales y musicales con destacados artistas.</p>
                             </div>  
+                            <div class="single-invite text-center portafolio-button" >
+                                <a href="#contact" class="my-btn-portafolio">Portafolio</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -337,14 +338,14 @@
         <!--portfolio area starts-->
 
     <div id="portfolio" class="portfolio-area section-padding">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="section-header">
                     <h2><span style="font-weight:normal;">N U E S T R O </span> <strong>E S T U D I O</strong></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-12">
 
                 </div>
             </div>
@@ -362,8 +363,23 @@
             <div class="row">
                 <div class="col-xs-12 col-lg-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3976.3804363768227!2d-74.11982748573683!3d4.703796042941684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x8e3f9b538d9f3615%3A0x16177ab02c88daa6!2sCra.+101+%2371c-18%2C+Bogot%C3%A1!3m2!1d4.7037907!2d-74.1176388!4m0!5e0!3m2!1ses!2sco!4v1551083800351" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div class="col-xs-12 col-lg-6">
-                    <p>encuéntranos en nuestro estudio.</p>               
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-xs-12 col-lg-5">
+                    <div class="info-contacto">   
+                    
+                        <p style="font-weight:500;line-height: 1em;">encuéntranos </p>
+                        <p style="font-weight:500;line-height: 0.5em">en nuestro estudio.</p>
+
+                        <br>
+                        <p style="font-size:16px;">Bogotá D,C </p>
+                        <p style="font-size:16px;">Cra 111 #71c - 18 </p>
+                        <p style="font-size:16px;">Timbre 00</p> 
+                        <br>
+                        <p style="font-size:18px;"><strong>telefono:</strong> </p>
+                        <p style="font-size:18px;"><strong>celular: </strong> <a href="tel:">(+57) </a> </p>               
+                        <p style="font-size:18px;"><strong>email: </strong><a href="mailto:memophonic@gmail.com">memophonic@gmail.com </a> </p>               
+                    </div>
                 </div>
                 </div>
             </div>
@@ -432,6 +448,8 @@
     </div>
 
   <!--contact area ends-->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <!--Footer Area Starts-->
 
@@ -521,22 +539,26 @@
 
     <!--Main js-->
     <script src="js/main.js"></script>
-
-    <!-- carousel slick -->
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
     
-    <!--Main js-->
-    <script src="js/slick-carousel.js"></script>
-    <script type="text/javascript">      
-        $(".regular").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-          });
-    </script>
-				
+    <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+              } else {
+                document.getElementById("myBtn").style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
+
 </body>
 </html>
