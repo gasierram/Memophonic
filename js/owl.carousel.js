@@ -204,7 +204,7 @@
 		startPosition: 0,
 		rtl: false,
 
-		smartSpeed: 250,
+		smartSpeed: 750,
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
@@ -2589,7 +2589,7 @@
 	 */
 	Autoplay.Defaults = {
 		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 10000,
 		autoplayHoverPause: false,
 		autoplaySpeed: false
 	};

@@ -361,7 +361,7 @@ img {
 
 .banner-area{
     /* background-image: url(../images/home/home.png); */
-    background-image: url(../images/home/web_1.jpg); */
+    background-image: url(../images/home/web_1.jpg); 
     background-position: center;
     -webkit-background-size:cover;
     background-size:cover;
@@ -467,7 +467,7 @@ canvas{
 }
 .about-area p{
     color:white!important;
-    font-size:18px!important;
+    font-size:24px!important;
     font-weight: lighter;
 
 }
@@ -1002,6 +1002,7 @@ canvas{
     margin-right: 5px;
     font-size: 15px;
     font-weight: bold;
+    border: 1px solid white!important;
     
 }
 .single-invite a:hover {
