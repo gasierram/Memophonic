@@ -25,7 +25,7 @@ $(function() { var logo = $(".lrg-logo"); $(window).scroll(function() {
             currentPos = 0;
 
         
-        image.style.backgroundImage = "url('images[currentPos]')";
+        // image.style.backgroundImage = "url('images[currentPos]')";
         // $(".banner-area").css("background-image", 'url("' + images[currentPos] + '")'  );
         // console.log('url("' + imageUrl + '")' )
         // $(".banner-area").css("background-position", 'center'  );
