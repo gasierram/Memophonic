@@ -305,6 +305,24 @@ img {
     background-image: url("../images/home/memophonic.png");
   }
 
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 480px) {
+    .lrg-logo {
+        width: 220px;
+        height: 30px;
+        background-size: 220px 30px;
+        background-repeat: no-repeat;
+
+    }
+
+    .sml-logo {
+        width:220px;
+        height: 30px;
+        background-size: 220px 30px;
+        background-repeat: no-repeat;
+      }
+  }
+
 
 /*---------- Nav area css ends -------------*/
 
@@ -1166,6 +1184,52 @@ canvas{
     
 /*--------------- Footer area ends -------------*/
 
+
+
+.footer-mobile {
+    background: #9B272D;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer-mobile h3{
+    
+    line-height: 0.5em;
+    color: #ffffff;
+}
+.footer-mobile nav ul li a{
+    font-weight: lighter;
+    font-size:15px;
+    line-height:0em;
+}
+.footer-mobile a{
+    color: white;
+}
+
+
+.footer-mobile ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-mobile .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.footer-mobile .social-icons li {
+    display:inline-block;
+    vertical-align:  middle;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.footer-mobile .social-icons li  a {
+    display: block;
+    font-size: 1.4em;
+    margin: 0 0px;
+    text-decoration: none;
+}
 
 /*---------- button top starts ------------------------ */
 
